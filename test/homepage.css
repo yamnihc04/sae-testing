@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+:root{
+	--ochre: #E6CB4F;
+	--red: #DF3C22;
+	--light-blue: #86B6C3;
+	--dark-blue: #5598AF;
+	--grey: #757575;
+}
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 26px;
+}
+
+a{
+	text-decoration: none;
+  color: black;
+}
+
+.section-1{
+	width: 100vw;
+	height: 100vh;
+	background: url("https://cdn.glitch.com/83f58151-5532-4a26-9d16-1cf71e4184d3%2Fyellow-book.jpg?v=1596985507663") ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navigation{
+	width: 100vw;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: row;
+	background-color: white;
+	margin-bottom: 1rem;
+}
+
+.brand{
+	width: 15rem;
+	height: 4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.brand-title{
+	color: var(--dark-blue);
+	font-size: 29px;
+}
+
+.brand-title:hover{
+	color: var(--grey);
+}
+
+.options{
+	width: 20rem;
+	height: 4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.goto{
+	width: 4rem;
+	height: 2rem;
+	text-align: center;
+	margin: 0.5rem;
+	line-height: 2;
+}
+
+.goto::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 5px;
+    left: 50%;
+    background-color: var(--dark-blue);
+    position: relative;
+    transition: width 0.3s, left 0.3s;
+}
+
+.goto:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.sign-in{
+	margin: 0.8rem;
+	text-align: center;
+	width: 5rem;
+	background-color: var(--dark-blue);
+	line-height: 2;
+	border-radius: 25px;
+	box-shadow: 2px 2px 6px rgba(0,0,0,0.5) , -2px -2px 3px rgba(255,255,255, 0.5);
+}
+
+.sign-in:hover{
+	box-shadow: inset 2px 2px 6px rgba(0,0,0,0.5) , inset -2px -2px 12px rgba(255,255,255, 0.5);
+	
+}
+
+#log-in{
+	color: white;
+}
+
+#blog-button,
+#about-button,
+#contact-button{
+	color: black;
+}
+
+#blog-button:hover,
+#about-button:hover,
+#contact-button:hover{
+	color: var(--grey);
+}
+
+.proposal{
+	width: 45%;
+	margin: auto;
+	text-align: center;
+}
+
+#sign-up-button{
+	margin: 0.5rem;
+	width: 6rem;
+	height: 2rem;
+	background-color: var(--red);
+	border:none;
+	outline: none;
+	border-radius: 25px;
+	transition: transform 0.2s ease-in;
+	box-shadow: 2px 2px 6px rgba(0,0,0,0.5) , -2px -2px 3px rgba(255,255,255, 0.2);
+	cursor: pointer;
+}
+
+#sign-up-button:hover{
+	background-color: #c92b10;
+	box-shadow: inset 2px 2px 6px rgba(0,0,0,0.5) , inset -2px -2px 12px rgba(255,255,255, 0.5);
+}
+
+.section-2{
+	width: 100vw;
+	height: auto;
+	margin: 1rem 0rem; 
+}
+
+.introduction-title{
+	width: 100vw;
+	height: 4rem;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	font-size: 30px;
+}
+
+.tile-container{
+	width:100vw;
+	height: 15rem;
+	display: grid;
+	grid-template-columns:repeat(3, 1fr);
+	align-items: center;
+	justify-items: center;
+}
+
+.card{
+	width: 80%;
+	height: 80%;
+	background-color: #F2F4F4;
+	border-radius: 20px;
+	box-shadow: 2px 5px 8px 2px var(--grey);
+}
+
+#card-1{
+	background: url("https://cdn.glitch.com/83f58151-5532-4a26-9d16-1cf71e4184d3%2Fquestionaire-2.png?v=1596985487971") ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#card-2{
+	background: url("https://cdn.glitch.com/83f58151-5532-4a26-9d16-1cf71e4184d3%2Flearn-more-1.png?v=1596985507192") ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#card-3{
+	background: url("https://cdn.glitch.com/83f58151-5532-4a26-9d16-1cf71e4184d3%2Fexposure-1.png?v=1596985487628") ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.circle{
+	width: 3rem;
+	height: 3rem;
+	background-color: var(--red);
+	border-radius: 50%;
+	text-align: center;
+	font-size: 50px;
+	color: var(--ochre);
+}
+
+.card-info{
+	margin: 0.5rem; 
+}
