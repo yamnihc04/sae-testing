@@ -29,7 +29,8 @@
         const auth = firebase.auth();
 
         const promise = auth.createUserWithEmailAndPassword(email, password).then(user => {
-            alert("Signup Successful :)")
+            alert("Signup Successful :)");
+            window.location.href="dashboard.html"; 
         }).catch(err => {
             alert(err.message);
         });
