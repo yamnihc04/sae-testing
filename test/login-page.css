@@ -19,6 +19,7 @@
 	align-items: center;
 	background-color: #CCD1D1;
 	border-radius: 15px;
+	padding-bottom: 0.5rem;
 }
 
 .text-top{
@@ -32,7 +33,7 @@ form{
 	justify-content: center;
 }
 
-input{
+input {
 	width: 15rem;
 	height: 2rem;
 	margin: 0.5rem;
@@ -48,14 +49,14 @@ input:focus{
 	box-shadow: inset 2px 2px 6px rgba(0,0,0,0.4) , inset -2px -2px 12px rgba(255,255,255, 0.9);
 }
 
-#submit{
-	width: 7rem;
-	border-radius: 25px;
+#btnLogin{
+	width: 7rem;	
+	border-radius: 20px;
 	background-color: var(--red);
 }
 
-#submit:hover,
-#submit:focus{
+#btnLogin:hover,
+#btnLogin:focus{
 	box-shadow: inset 2px 2px 6px rgba(0,0,0,0.4) , inset -2px -2px 12px rgba(255,255,255, 0.4);
 
 }
