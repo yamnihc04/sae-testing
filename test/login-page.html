@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
 
+
+	    <!--Adding Firebase-->
+		<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-firestore.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-auth.js"></script>
 
 	<title>Log In</title>
 	<link rel="stylesheet" href="homepage.css">
@@ -19,7 +23,7 @@
 			<div class="goto"><a href="#" id="blog-button">Blog</a></div>
 			<div class="goto"><a href="#" id="about-button">About</a></div>
 			<div class="goto"><a href="#" id="contact-button">Contact</a></div>
-			<div class="sign-in"><a href="https://sae-trial.glitch.me/login-page.html" id="log-in">Log In</a></div>
+			<div class="sign-in"><a href="login-page.html" id="log-in">Log In</a></div>
 		</div>
 	</div>
 
@@ -27,14 +31,14 @@
 		<div class="section-21">
 			<div class="login-form-container">
 				<p class="text-top">Log In</p>
-				<form name="login-form">
-					<input type="email" name="email" id="email" placeholder="Email Id">
-					<input type="password" name="password" id="password" placeholder="Password">
-					<input type="submit" name="submit" id="submitLogin">
+				<form name="login-form"  onsubmit="return false" >
+					<input type="email" name="email" id="txtEmail" placeholder="Email Id">
+					<input type="password" name="password" id="txtPassword" placeholder="Password">
+					<button type="submit" name="submit" id="btnLogin">
 				</form>
 			</div>
 		</div>
 	</section>
-    <script src="script.js"></script>
+    <script src="loginScript.js"></script>
 </body>
 </html>
