@@ -26,6 +26,7 @@ const btnSignup = document.getElementById("btnSignup");
     
     auth.signInWithEmailAndPassword(email, password).then(user =>{
         alert("Login Successful :)");
+        window.location.href="dashboard.html"; 
     }).catch(err => {
         alert(err.message);
     });
