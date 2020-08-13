@@ -1,0 +1,202 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 26px;
+}
+
+:root{
+	--light-grey: #E5E8E8;
+}
+
+.section-31{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+	margin: 1rem;
+}
+
+.left-cards-div{
+	
+	width: 75%;
+	height: 100%;
+}
+
+.greeting-main{
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.right-side-menu{
+	width: 20%;
+	height: 90%;
+	border-radius: 15px;
+	background-color: var(--light-grey);
+}
+
+.analysis-card{
+	width: auto;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	margin: 1rem 0rem;
+}
+
+.field{
+	padding: 1rem;
+	width: 12rem;
+	background-color: var(--light-grey) ;
+	border-radius: 15px;
+	margin-right: 1rem;
+}
+
+.field-name{
+	font-weight: bold;
+	font-size: 36px;
+}
+
+.take-test{
+	margin-top: 0.5rem;
+	width: 8rem;
+	height: 2rem;
+	border-radius: 25px;
+	border: none;
+	outline: none;
+	background-color: var(--red) ; 
+	color: white;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.5), -2px -2px 4px rgba(255,255,255,0.5); 
+	cursor: pointer;
+}
+
+.take-test:hover{
+	box-shadow: inset 2px 2px 2px rgba(0,0,0,0.5), inset -2px -2px 4px rgba(255,255,255,0.5);
+
+}
+
+
+.line-1{
+	line-height: 150%;
+}
+
+.progress-tab{
+	border-radius: 15px;
+	padding: 1rem; 
+	background-color: var(--light-grey) ;
+}
+
+.label-progress{
+	margin-right: 0.5rem;
+}
+
+.progress-bar{
+	-webkit-appearance: none;
+	width: 10rem;
+	height: 1rem;
+}
+
+.progress-bar::-webkit-progress-bar{
+	border-radius: 25px;
+	display: flex;
+	align-items: center;
+	box-shadow: inset 2px 2px 2px rgba(0,0,0,0.5), inset -2px -2px 4px rgba(255,255,255,0.5); 
+}
+
+.progress-bar::-webkit-progress-value{
+	border-radius: 25px;
+	height: 0.5rem;
+	background-color: black;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.5), -2px -2px 4px rgba(255,255,255,0.5); 
+}
+
+#profile::-webkit-progress-bar{
+	background-color: var(--red);
+}
+
+#resources::-webkit-progress-bar{
+	background-color: var(--dark-blue);
+}
+
+
+#tests::-webkit-progress-bar{
+	background-color: var(--ochre);
+}
+
+.more-cards{
+	height: 9rem;
+	width: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+	margin-right: 1rem;
+}
+
+.card-in-row{
+	height: 7rem;
+	width: 6.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 15px;
+	padding: 1rem;
+	text-align: center;
+	box-shadow: 4px 4px 2px rgba(0,0,0,0.3), -2px -2px 8px rgba(255,255,255,0.5); 	
+}
+
+.card-in-row:hover{
+	box-shadow: inset 4px 4px 2px rgba(0,0,0,0.3), inset -2px -2px 8px rgba(255,255,255,0.5); 	
+}
+
+#card-31{
+	background-color:var(--light-blue);
+	color: black;
+}
+
+#card-32{
+	background-color:var(--ochre);
+	color: black;
+}
+
+#card-33{
+	background-color:var(--red);
+	color: black;
+}
+
+#card-34{
+	background-color:var(--dark-blue);
+	color: black;
+
+}
+
+.extra-options{
+	margin: 0.5rem;
+}
+
+.extra-options a:hover{
+	color: var(--dark-blue);
+}
+
+.profile-picture{
+	height: auto;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#graph-container{
+	width: 100vw;
+	height: auto;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.last{
+	height: 300px;
+	width: auto;
+	object-fit: contain;
+	text-align: center;
+}
+
